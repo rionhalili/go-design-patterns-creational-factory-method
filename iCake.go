@@ -1,8 +1,10 @@
 package main
 
 type ICake interface {
-	setName()
-	setCakeType()
-	getName()
-	getCakeType()
+	setName(name string)
+	setCategory(cakeType string)
+	setPrice(price float64)
+	getName() string
+	getCategory() string
+	getPrice() float64
 }
