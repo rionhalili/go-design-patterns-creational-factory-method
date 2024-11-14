@@ -1,14 +1,15 @@
 package main
 
-type strawberry struct {
+type orange struct {
 	Cake
 }
 
-func newStrawberry() ICake {
-	return &strawberry{
+func newOrangeCake() ICake {
+	return &orange{
 		Cake{
-			name:     "Strawberry Cake",
-			cakeType: "Strawberry",
+			name:     "Orange Cake",
+			category: "Fruits",
+			price:    8.7,
 		},
 	}
 }
